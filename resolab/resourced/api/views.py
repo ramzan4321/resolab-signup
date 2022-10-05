@@ -33,7 +33,7 @@ class UserList(ListAPIView):
     serializer_class = UserSerializer
     def get_queryset(self):
         """
-        This view should return a list of all the purchases
+        This view should return a list of all the information
         for the currently authenticated user.
         """
         user = self.request.user
